@@ -1,0 +1,4 @@
+version: ion:'3'
+services:
+    db:
+        image: postgres:9.6

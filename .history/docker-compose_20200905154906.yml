@@ -1,0 +1,11 @@
+version: '3'
+volumes: :
+    dados:
+services:
+    db:
+        image: postgres:9.6
+        volumes:
+            #volume dos dados
+            - dados:/var/lib/postgresql/data
+        environment:
+            POSTGRES_HOST_AUTH_METHOD: trust
